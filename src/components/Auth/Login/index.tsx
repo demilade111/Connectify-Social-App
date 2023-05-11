@@ -1,16 +1,35 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import HeaderContent from "../../Header";
-import { AuthDetailText, AuthHeaderText, Wrapper } from "./styles";
+import {
+  AuthDetailText,
+  AuthHeaderText,
+  ForgotPasswordText,
+  ForgotPasswordView,
+  FormTextInput,
+  FormView,
+  LabelText,
+  TopWrapper,
+} from "./styles";
 
 const LoginContent = () => {
   return (
     <>
       <HeaderContent />
-      <Wrapper>
+      <TopWrapper>
         <AuthHeaderText>Sign in</AuthHeaderText>
         <AuthDetailText>Enter your credentials</AuthDetailText>
-      </Wrapper>
+        <FormView>
+          <LabelText>Username</LabelText>
+          <FormTextInput />
+          <LabelText>Password</LabelText>
+          <FormTextInput />
+        </FormView>
+
+        <ForgotPasswordView>
+          <ForgotPasswordText>Forgot Password</ForgotPasswordText>
+        </ForgotPasswordView>
+      </TopWrapper>
     </>
   );
 };
