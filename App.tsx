@@ -3,6 +3,8 @@ import * as Font from "expo-font";
 
 import styled from "styled-components";
 import { Text, View } from "react-native";
+import LoginScreen from "./src/screens/LoginScreen";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 const loadFonts = async () => {
   await Font.loadAsync({
@@ -18,7 +20,7 @@ const Container = styled(View)`
 `;
 const Paragraph = styled(Text)`
   font-family: Poppins-Bold;
-  color:red;
+  color: red;
 `;
 
 export default function App() {
@@ -33,8 +35,8 @@ export default function App() {
   }
 
   return (
-    <Container>
-      <Paragraph>demihj</Paragraph>
-    </Container>
+    <SafeAreaProvider>
+      <LoginScreen />
+    </SafeAreaProvider>
   );
 }
