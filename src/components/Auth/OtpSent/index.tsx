@@ -4,10 +4,12 @@ import HeaderContent from "../../Header";
 import {
   AuthDetailText,
   AuthHeaderText,
+  BottomWrapper,
+  SubmitButton,
   TopWrapper,
   Wrapper,
 } from "../Login/styles";
-import { FormView } from "./styles";
+import { FormView, OtpTextInput, ResendOtpText, ResendOtpView } from "./styles";
 
 const OtpSentContent = () => {
   return (
@@ -19,8 +21,28 @@ const OtpSentContent = () => {
           <AuthHeaderText>OTP sent</AuthHeaderText>
           <AuthDetailText>Enter the OTP sent to you</AuthDetailText>
 
-          <FormView></FormView>
+          <FormView>
+            <OtpTextInput />
+            <OtpTextInput />
+            <OtpTextInput />
+            <OtpTextInput />
+          </FormView>
+
+          <ResendOtpView>
+            <ResendOtpText>
+              Didn't receive any code?{" "}
+              <Text style={{ color: "#e41717" }}>Resend in 01:00</Text>
+            </ResendOtpText>
+          </ResendOtpView>
         </TopWrapper>
+
+        <BottomWrapper>
+          <SubmitButton
+            title="Next"
+            accessibilityLabel="Submit"
+            color="#006175"
+          />
+        </BottomWrapper>
       </Wrapper>
     </>
   );
