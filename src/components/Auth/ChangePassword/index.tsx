@@ -20,12 +20,12 @@ const ChangePasswordContent = () => {
       <HeaderContent />
       <Wrapper>
         <TopWrapper>
-          <AuthHeaderText>Forgot Password</AuthHeaderText>
-          <AuthDetailText>Let's help recover your account</AuthDetailText>
+          <AuthHeaderText>Pick a new password</AuthHeaderText>
+          <AuthDetailText>Help secure your account</AuthDetailText>
           <FormView>
-            <LabelText>Email</LabelText>
+            <LabelText>New Password</LabelText>
             <FormTextInput />
-            <LabelText>Phone number</LabelText>
+            <LabelText>Confirm new Password</LabelText>
             <FormTextInput />
           </FormView>
         </TopWrapper>
