@@ -5,6 +5,9 @@ export const AuthHeaderText = styled.Text`
   font-size: 20px;
 `;
 
+export const Wrapper = styled.View`
+  flex: 1;
+`;
 export const AuthDetailText = styled.Text`
   font-size: 13px;
   padding-top: 5px;
@@ -14,6 +17,11 @@ export const AuthDetailText = styled.Text`
 export const TopWrapper = styled.View`
   padding-left: 10px;
   padding-right: 10px;
+  flex: 5;
+`;
+
+export const BottomWrapper = styled.View`
+  flex: 1;
 `;
 
 export const FormTextInput = styled.TextInput`
@@ -42,4 +50,14 @@ export const ForgotPasswordText = styled.Text`
   color: #4d919f;
   font-weight: 500;
   font-size: 15px;
+`;
+
+export const SubmitButton = styled.Button`
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+`;
+
+export const SignUpText = styled.Text`
+  margin: 20px auto;
 `;

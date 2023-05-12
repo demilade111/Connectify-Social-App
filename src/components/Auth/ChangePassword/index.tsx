@@ -5,8 +5,6 @@ import {
   AuthDetailText,
   AuthHeaderText,
   BottomWrapper,
-  ForgotPasswordText,
-  ForgotPasswordView,
   FormTextInput,
   FormView,
   LabelText,
@@ -16,18 +14,18 @@ import {
   Wrapper,
 } from "../Login/styles";
 
-const ForgotPasswordContent = () => {
+const ChangePasswordContent = () => {
   return (
     <>
       <HeaderContent />
       <Wrapper>
         <TopWrapper>
-          <AuthHeaderText>Forgot Password</AuthHeaderText>
-          <AuthDetailText>Let's help recover your account</AuthDetailText>
+          <AuthHeaderText>Pick a new password</AuthHeaderText>
+          <AuthDetailText>Help secure your account</AuthDetailText>
           <FormView>
-            <LabelText>Email</LabelText>
+            <LabelText>New Password</LabelText>
             <FormTextInput />
-            <LabelText>Phone number</LabelText>
+            <LabelText>Confirm new Password</LabelText>
             <FormTextInput />
           </FormView>
         </TopWrapper>
@@ -38,17 +36,12 @@ const ForgotPasswordContent = () => {
             accessibilityLabel="Submit"
             color="#006175"
           />
-
-          <SignUpText>
-            Do not have an Account?{" "}
-            <Text style={{ color: "#70a6b1" }}>Sign Up</Text>
-          </SignUpText>
         </BottomWrapper>
       </Wrapper>
     </>
   );
 };
 
-export default ForgotPasswordContent;
+export default ChangePasswordContent;
 
 const styles = StyleSheet.create({});
