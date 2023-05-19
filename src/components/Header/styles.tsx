@@ -1,8 +1,5 @@
 import styled from "styled-components/native";
-
-interface WrapperProps {
-  insets: { top: number; bottom: number };
-}
+import { WrapperProps } from "../../types";
 
 export const Wrapper = styled.View<WrapperProps>`
   padding-top: ${(props) => props.insets.top + 30}px;
