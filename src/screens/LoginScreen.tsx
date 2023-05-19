@@ -4,6 +4,7 @@ import LoginContent from "../components/Auth/Login";
 import ForgotPasswordContent from "../components/Auth/ForgotPassword";
 import ChangePasswordContent from "../components/Auth/ChangePassword";
 import OtpSentContent from "../components/Auth/OtpSent";
+import HomeContent from "../components/Home";
 
 const LoginScreen = () => {
   return (
@@ -11,7 +12,8 @@ const LoginScreen = () => {
       {/* <LoginContent /> */}
       {/* <ForgotPasswordContent /> */}
       {/* <ChangePasswordContent /> */}
-      <OtpSentContent />
+      {/* <OtpSentContent /> */}
+      <HomeContent />
     </>
   );
 };
