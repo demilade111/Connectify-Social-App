@@ -12,7 +12,6 @@ export const Wrapper = styled.View<WrapperProps>`
 `;
 
 export const CenterText = styled.Text`
-  width: 43px;
   height: 27px;
   font-style: normal;
   font-weight: 600;

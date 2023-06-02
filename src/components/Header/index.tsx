@@ -11,6 +11,7 @@ const HeaderContent = (props: HeaderPropsType) => {
     <Wrapper insets={insets}>
       <CustomIcon name="chevron-back-sharp" type="ionicon" />
       <CenterText>{props?.title}</CenterText>
+
       <Text></Text>
     </Wrapper>
   );

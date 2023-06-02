@@ -5,3 +5,7 @@ export type WrapperProps = {
 export type HeaderPropsType = {
   title?: string;
 };
+
+export type NotificationSectionPropsType = {
+  title: string;
+};
