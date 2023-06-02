@@ -5,6 +5,8 @@ import ForgotPasswordContent from "../components/Auth/ForgotPassword";
 import ChangePasswordContent from "../components/Auth/ChangePassword";
 import OtpSentContent from "../components/Auth/OtpSent";
 import HomeContent from "../components/Home";
+import AddPostContent from "../components/Post/AddPost";
+import NotificationContent from "../components/Notification";
 
 const LoginScreen = () => {
   return (
@@ -13,7 +15,9 @@ const LoginScreen = () => {
       {/* <ForgotPasswordContent /> */}
       {/* <ChangePasswordContent /> */}
       {/* <OtpSentContent /> */}
-      <HomeContent />
+      {/* <HomeContent /> */}
+      {/* <AddPostContent /> */}
+      <NotificationContent />
     </>
   );
 };

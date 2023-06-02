@@ -87,7 +87,7 @@ export const PostLikesText = styled.Text`
   line-height: 12px;
 `;
 
-export const PostLikeNumberText = styled.View`
+export const PostLikeNumberText = styled.Text`
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

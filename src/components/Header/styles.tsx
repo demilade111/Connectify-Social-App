@@ -10,3 +10,12 @@ export const Wrapper = styled.View<WrapperProps>`
   justify-content: space-between;
   align-items: center;
 `;
+
+export const CenterText = styled.Text`
+  height: 27px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+`;
