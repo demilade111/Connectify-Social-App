@@ -16,8 +16,8 @@ const LoginScreen = () => {
       {/* <ChangePasswordContent /> */}
       {/* <OtpSentContent /> */}
       {/* <HomeContent /> */}
-      {/* <AddPostContent /> */}
-      <NotificationContent />
+      <AddPostContent />
+      {/* <NotificationContent /> */}
     </>
   );
 };

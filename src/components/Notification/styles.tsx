@@ -3,6 +3,7 @@ import styled from "styled-components/native";
 export const NotificationView = styled.View`
   margin-left: 27px;
   margin-right: 27px;
+  margin-top: 25px;
 `;
 
 export const NotificationSectionText = styled.Text`
