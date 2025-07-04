@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import * as Font from "expo-font";
-
-import styled from "styled-components";
-import { Text, View } from "react-native";
-import LoginScreen from "./src/screens/LoginScreen";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import { AuthProvider } from "./src/context/AuthContext";
+import AppNavigator from "./src/navigation/AppNavigator";
 
 const loadFonts = async () => {
   await Font.loadAsync({
@@ -12,16 +10,6 @@ const loadFonts = async () => {
     "Poppins-Bold": require("./assets/fonts/Poppins-ExtraBoldItalic.ttf"),
   });
 };
-const Container = styled(View)`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-`;
-const Paragraph = styled(Text)`
-  font-family: Poppins-Bold;
-  color: red;
-`;
 
 export default function App() {
   const [isReady, setIsReady] = useState(false);
@@ -36,7 +24,9 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <LoginScreen />
+      <AuthProvider>
+        <AppNavigator />
+      </AuthProvider>
     </SafeAreaProvider>
   );
 }
